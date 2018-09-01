@@ -6,8 +6,7 @@ api key : get your api key from https://www.alphavantage.co/support/#api-key
 import requests
 import json
 def convert(conv):
-    data = requests.get('https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=INR&\
-    apikey=demo') # change demo with api key
+    data = requests.get('https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=INR&apikey=demo') # change demo with api key
     #print(type(data.content))
     val = json.loads(data.content)
     #print(type(val))
